@@ -1,0 +1,56 @@
+CHALLENGE SPRINT 3 - RESULTADOS
+Base de dados: Palmer Penguins (espécie Adélie, n=151)
+
+=========================================
+ANÁLISE 1 - Probabilidade acima da mediana
+=========================================
+Variável: body_mass_g (massa corporal)
+Mediana: 3700.00 g
+Média: 3700.66 g
+Desvio-padrão: 458.57 g
+Probabilidade P(X > mediana): 50.06%
+Classificação: provável
+
+Interpretação: média e mediana ficaram praticamente iguais, o que é o
+comportamento esperado numa distribuição Normal. A probabilidade ficou
+bem perto de 50%, e não exatamente 50%, porque a mediana foi calculada
+a partir dos dados reais (amostrais), enquanto a probabilidade foi
+calculada usando a média como centro da distribuição Normal teórica.
+
+=========================================
+ANÁLISE 2 - Probabilidade no intervalo (média ± 2 desvios-padrão)
+=========================================
+Média: 3700.66 g
+Desvio-padrão: 458.57 g
+Limite inferior (média - 2s): 2783.53 g
+Limite superior (média + 2s): 4617.79 g
+Probabilidade P(limite_inf <= X <= limite_sup): 95.45%
+Classificação: quase certo
+Proporção real de dados dentro do intervalo (checagem empírica): 96.69%
+
+Interpretação: o resultado teórico (95.45%) bate com a regra empírica
+68-95-99.7 de uma distribuição Normal. A proporção real observada nos
+dados (96.69%) ficou próxima do valor teórico, reforçando que a
+suposição de Normalidade foi razoável para essa variável, dentro da
+espécie Adélie.
+
+=========================================
+ANÁLISE 3 - Regressão Linear
+=========================================
+X (variável independente): flipper_length_mm (comprimento da nadadeira, mm)
+Y (variável dependente): body_mass_g (massa corporal, g)
+n = 151
+Intercepto (b0): -2535.84
+Coeficiente angular (b1): 32.83
+Equação: body_mass_g = -2535.84 + 32.83 * flipper_length_mm
+R²: 0.2192
+
+Interpretação: existe uma relação positiva entre o comprimento da
+nadadeira e a massa corporal - a cada 1 mm a mais de nadadeira, o
+modelo estima um aumento médio de 32.83 g na massa. O R² de 0.2192
+indica que o comprimento da nadadeira explica apenas cerca de 22% da
+variação da massa corporal: é uma relação real, mas estatisticamente
+fraca. Outros fatores não incluídos no modelo (sexo, dimensões do
+bico, variação individual) provavelmente também influenciam o peso.
+A análise foi feita apenas com a espécie Adélie, e correlação/regressão
+não implica causalidade.
