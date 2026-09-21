@@ -25,8 +25,7 @@ Chinstrap e Gentoo) coletadas no Arquipélago de Palmer, Antártida.
 - 344 linhas, 7 colunas (species, island, bill_length_mm, bill_depth_mm,
   flipper_length_mm, body_mass_g, sex)
 
-O arquivo `dados/penguins.csv` contém a base já exportada, exatamente como
-usada nas análises.
+O arquivo `dados/penguins.csv` contém a base já exportada.
 
 ## Por que restringir a análise à espécie Adélie?
 As três espécies de pinguim têm médias de massa corporal bem diferentes
