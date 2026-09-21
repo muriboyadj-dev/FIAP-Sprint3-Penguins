@@ -66,7 +66,7 @@ pinguins estruturalmente maiores tendem a pesar mais.
 | Provável            | de 50% a 90%      |
 | Quase certo         | 90% ou mais       |
 
-## Resultados principais
+# Resultados principais
 
 **Análise 1 — Probabilidade acima da mediana**
 - Mediana: 3700.00 g | Média: 3700.66 g | Desvio-padrão: 458.57 g
